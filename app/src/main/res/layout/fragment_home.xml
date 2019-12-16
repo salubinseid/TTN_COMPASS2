@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:id="@+id/search_bar_container"
+        android:layout_margin="10dp"
+        android:background="#fff">
+
+        <Spinner
+            android:text="Country"
+            android:id="@+id/txtGatewaySearch"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="Country"
+            android:layout_width="fill_parent">
+        </Spinner>
+        <Button
+            android:text="Show"
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_bar_container"
+        android:background="@android:color/transparent"
+        android:paddingTop="30dp">
+
+
+    <TextView
+        android:id="@+id/txt_compass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"
+        android:text="---"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="62dp"
+        android:maxHeight="62dp"
+        android:scaleType="fitCenter"
+        android:layout_marginRight="3dp"
+        android:src="@drawable/compass3"
+        android:id="@+id/img_compass"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_compass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

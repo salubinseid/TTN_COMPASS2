@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_below="@+id/ttn_searchcontainer"
+        android:singleLine="false"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="General"
+        android:paddingBottom="10dp"/>
+
+    <ListView
+        android:id="@+id/listview1"
+        android:background="@color/cardview_light_background"
+        android:layout_below="@id/textview2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txtAbout"
+        android:layout_below="@+id/textview1"
+        android:textSize="16dp"
+        android:text="About"
+        android:textColor="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/txtAboutDesc1"
+        android:layout_below="@+id/txtAbout"
+        android:textSize="14dp"
+        android:lines="3"
+        android:text="TTN COMPASS \n Marconi Lab, ICTP, Trieste \n V. 1.0.0, 2019 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"/>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TTN_COMPASS2</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Open">1</string>
+    <string name="Close">2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_settings">Settings</string>
+    <string-array name="ttn_gateway">
+        <item>Notification</item>
+        <item>Data Sync</item>
+        <item>Map</item>
+
+    </string-array>
+
+</resources>
